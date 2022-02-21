@@ -31,14 +31,14 @@ const ThoughtForm = () => {
     }
   });
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     if (event.target.value.length <= 280) {
       setText(event.target.value);
       setCharacterCount(event.target.value.length);
     }
   };
 
-  const handleFormSubmit = async event => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
 
     try {
@@ -75,6 +75,7 @@ const ThoughtForm = () => {
           Submit
         </button>
       </form>
+      {error && <span className="ml-2">Something went wrong...</span>}
     </div>
   );
 };
