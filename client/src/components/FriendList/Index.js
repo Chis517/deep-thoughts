@@ -17,7 +17,7 @@ const FriendList = ({ friendCount, username, friends }) => {
         </button>
       ))}
     </div>
-  );
+  )
 };
 
 export default FriendList;
